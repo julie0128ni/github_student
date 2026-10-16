@@ -1,0 +1,20 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T071823Z-P22-4d88",
+  "event_type": "test_result",
+  "group_id": "G-01",
+  "person_id": "P22",
+  "created_at": "2026-10-16T07:18:23Z",
+  "related_events": [],
+  "scope": "main",
+  "commit": "e689dfb24498507958ce2da3a45e4becd65f5a13",
+  "commands": [
+    "pytest"
+  ],
+  "automated_result": "pass",
+  "passed": 1,
+  "failed": 0,
+  "skipped": 0,
+  "human_checks_required": [],
+  "summary": "Final pytest on canonical main before finalization."
+}
