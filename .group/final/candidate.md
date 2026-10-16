@@ -5,10 +5,15 @@ See `.group/assignment/assignment.md`.
 
 ## Proposed Result
 Canonical branch: `main`
-Canonical commit: `d8979f2fc35cb32e53a41a9e37b02293bb61d41b`
+Canonical commit: `b34895a749d90d1807dcca3ffad271fb51fe1e90`
+
+## Accepted Changes
+- C-1: Add demo2 collaboration file
+- C-2: Add P17 version of conflict demo
+- C-3: Add P31 member and basic demo test
 
 ## Pending Published Changes
-- None detected from published change events.
+- None detected outside the canonical state.
 
 ## Validation Evidence
 - pass: Run pytest on integrated C-1. (commit caf0ba9dd77e1ef0a8a6bb712973d748a2cd6459)

@@ -1,0 +1,18 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T081955Z-P31-11b7",
+  "event_type": "final_candidate",
+  "group_id": "G-01",
+  "person_id": "P31",
+  "created_at": "2026-10-16T08:19:55Z",
+  "related_events": [],
+  "canonical_commit": "b34895a749d90d1807dcca3ffad271fb51fe1e90",
+  "candidate_report_path": ".group/final/candidate.md",
+  "tests_evidence": [
+    "E-20261016T071057Z-P22-443f",
+    "E-20261016T071823Z-P22-4d88",
+    "E-20261016T080253Z-P22-7e3c",
+    "E-20261016T081148Z-P31-bb01"
+  ],
+  "known_issues": []
+}
