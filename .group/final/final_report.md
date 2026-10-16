@@ -7,7 +7,7 @@ See `.group/assignment/assignment.md`.
 The group submits the accepted canonical repository state described below.
 
 ## Canonical Commit
-751b04f047f141f1700fbe5cfd44c0879d930538
+4528da8ccda85c0aecb47d6b8a38f203dfc17216
 
 ## Important Changes
 - C-1: Add demo2 collaboration file
@@ -19,6 +19,7 @@ The group submits the accepted canonical repository state described below.
 - pass: Final pytest on canonical main before finalization. (commit e689dfb24498507958ce2da3a45e4becd65f5a13)
 - pass: Final validation of canonical main after C-2 and C-3. (commit 5e24c4a32032418ed2100faddf6ec3cb0baad0bb)
 - pass: Final validation of canonical main after C-2 and C-3. (commit 5a4d3b9c362bbfba2b1bed3e63e696aa954fffe8)
+- pass: Final validation of completed protocol 0.1 implementation. (commit 78efa2ab914997904053d0d05b9358980f27167e)
 
 ## Known Limitations
 - None recorded.
