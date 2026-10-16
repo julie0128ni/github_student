@@ -1,1 +1,11 @@
-{}
+{
+  "protocol_version": "0.1",
+  "group_id": "G-01",
+  "canonical_branch": "main",
+  "canonical_commit": "96f62d57b4c8a9036f41d58a3e45a567fd22f6f2",
+  "report_file": ".group/final/final_report.md",
+  "initiated_by": "P22",
+  "created_at": "2026-10-16T07:21:10Z",
+  "status": "completed",
+  "known_limitations": []
+}
