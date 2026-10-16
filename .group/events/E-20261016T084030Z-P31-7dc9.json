@@ -1,0 +1,20 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T084030Z-P31-7dc9",
+  "event_type": "test_result",
+  "group_id": "G-01",
+  "person_id": "P31",
+  "created_at": "2026-10-16T08:40:30Z",
+  "related_events": [],
+  "scope": "main",
+  "commit": "dd0926cd2a560c404a7240908caed2054841d7e1",
+  "commands": [
+    "pytest"
+  ],
+  "automated_result": "pass",
+  "passed": 3,
+  "failed": 0,
+  "skipped": 0,
+  "human_checks_required": [],
+  "summary": "Verify pytest result count parsing."
+}
