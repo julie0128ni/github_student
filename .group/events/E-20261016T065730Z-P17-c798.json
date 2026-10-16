@@ -1,0 +1,20 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T065730Z-P17-c798",
+  "event_type": "change_published",
+  "group_id": "G-01",
+  "person_id": "P17",
+  "created_at": "2026-10-16T06:57:30Z",
+  "related_events": [],
+  "change_id": "C-1",
+  "branch": "people/P17/demo",
+  "commit": "508613a6deb089e4ec3fe348e5e202a517c24f4a",
+  "summary": "Add demo2 collaboration file",
+  "files_changed": [
+    "demo2.txt"
+  ],
+  "interface_changes": [],
+  "tests_run": [],
+  "known_issues": [],
+  "proposed_for_integration": true
+}
