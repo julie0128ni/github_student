@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import argparse
 import json
 import subprocess
@@ -229,6 +230,29 @@ def cmd_review(args) -> int:
     print(f"Review published for {args.change_id}: {args.verdict}")
     return 0
 
+def parse_pytest_counts(output: str) -> dict[str, int] | None:
+    patterns = {
+        "passed": r"(\d+)\s+passed\b",
+        "failed": r"(\d+)\s+failed\b",
+        "skipped": r"(\d+)\s+skipped\b",
+    }
+
+    counts = {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+    }
+
+    found = False
+
+    for key, pattern in patterns.items():
+        match = re.search(pattern, output)
+
+        if match:
+            counts[key] = int(match.group(1))
+            found = True
+
+    return counts if found else None
 
 def cmd_test(args) -> int:
     cfg = load_group_config()
@@ -236,45 +260,105 @@ def cmd_test(args) -> int:
     scope = args.scope or "current_branch"
     commit = current_commit(cfg.root)
     commands = args.command or []
+
     passed_commands = 0
     failed_commands = 0
+
+    test_passed = 0
+    test_failed = 0
+    test_skipped = 0
+    found_test_counts = False
+
     if commands:
         for command in commands:
             print(f"$ {command}")
-            proc = subprocess.run(command, cwd=cfg.root, shell=True)
+
+            proc = subprocess.run(
+                command,
+                cwd=cfg.root,
+                shell=True,
+                text=True,
+                capture_output=True,
+            )
+
+            if proc.stdout:
+                print(proc.stdout, end="")
+
+            if proc.stderr:
+                print(proc.stderr, end="")
+
+            output = (proc.stdout or "") + "\n" + (proc.stderr or "")
+
+            pytest_counts = parse_pytest_counts(output)
+
+            if pytest_counts is not None:
+                found_test_counts = True
+                test_passed += pytest_counts["passed"]
+                test_failed += pytest_counts["failed"]
+                test_skipped += pytest_counts["skipped"]
+
             if proc.returncode == 0:
                 passed_commands += 1
             else:
                 failed_commands += 1
+
     if not commands:
         result = "not_available"
     elif failed_commands:
         result = "fail"
     else:
         result = "pass"
+
     markers = grep_conflict_markers(cfg.root)
+
     if markers:
         result = "fail"
+
     summary = args.summary or (
-        "All configured automated commands passed." if result == "pass" else
-        "One or more automated checks failed." if result == "fail" else
+        "All configured automated commands passed."
+        if result == "pass"
+        else
+        "One or more automated checks failed."
+        if result == "fail"
+        else
         "No automated test command was supplied."
     )
+
+    # When pytest-style test counts are available, record the
+    # actual number of tests. Otherwise fall back to command counts.
+    if found_test_counts:
+        passed = test_passed
+        failed = test_failed
+        skipped = test_skipped
+    else:
+        passed = passed_commands
+        failed = failed_commands
+        skipped = 0
+
     ev = common_event(cfg, person_id, "test_result")
+
     ev.update({
         "scope": scope,
         "commit": commit,
         "commands": commands,
         "automated_result": result,
-        "passed": passed_commands,
-        "failed": failed_commands,
-        "skipped": 0,
+        "passed": passed,
+        "failed": failed,
+        "skipped": skipped,
         "human_checks_required": args.human_check or [],
         "summary": summary,
     })
+
     path = write_event(cfg, ev)
-    commit_event_and_push(cfg, path, f"group: test result {commit[:8]}")
+
+    commit_event_and_push(
+        cfg,
+        path,
+        f"group: test result {commit[:8]}",
+    )
+
     print(f"TEST published: {result} for {commit}")
+
     return 0 if result != "fail" else 1
 
 
