@@ -1,0 +1,20 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T082708Z-P31-aaa1",
+  "event_type": "test_result",
+  "group_id": "G-01",
+  "person_id": "P31",
+  "created_at": "2026-10-16T08:27:08Z",
+  "related_events": [],
+  "scope": "main",
+  "commit": "78efa2ab914997904053d0d05b9358980f27167e",
+  "commands": [
+    "pytest"
+  ],
+  "automated_result": "pass",
+  "passed": 1,
+  "failed": 0,
+  "skipped": 0,
+  "human_checks_required": [],
+  "summary": "Final validation of completed protocol 0.1 implementation."
+}
