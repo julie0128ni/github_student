@@ -1,0 +1,20 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T084358Z-P31-0037",
+  "event_type": "change_published",
+  "group_id": "G-01",
+  "person_id": "P31",
+  "created_at": "2026-10-16T08:43:58Z",
+  "related_events": [],
+  "change_id": "C-4",
+  "branch": "people/P31/test-count-fix",
+  "commit": "9eddc722def5ca698303715dbe63bae351090108",
+  "summary": "Fix pytest result count parsing",
+  "files_changed": [
+    "groupctl/cli.py"
+  ],
+  "interface_changes": [],
+  "tests_run": [],
+  "known_issues": [],
+  "proposed_for_integration": false
+}
