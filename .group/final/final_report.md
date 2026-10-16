@@ -7,12 +7,13 @@ See `.group/assignment/assignment.md`.
 The group submits the accepted canonical repository state described below.
 
 ## Canonical Commit
-4528da8ccda85c0aecb47d6b8a38f203dfc17216
+c446f6eae30d458fc49590da88d65d02dac2cb3c
 
 ## Important Changes
 - C-1: Add demo2 collaboration file
 - C-2: Add P17 version of conflict demo
 - C-3: Add P31 member and basic demo test
+- C-4: Fix pytest result count parsing
 
 ## Validation
 - pass: Run pytest on integrated C-1. (commit caf0ba9dd77e1ef0a8a6bb712973d748a2cd6459)
@@ -20,6 +21,8 @@ The group submits the accepted canonical repository state described below.
 - pass: Final validation of canonical main after C-2 and C-3. (commit 5e24c4a32032418ed2100faddf6ec3cb0baad0bb)
 - pass: Final validation of canonical main after C-2 and C-3. (commit 5a4d3b9c362bbfba2b1bed3e63e696aa954fffe8)
 - pass: Final validation of completed protocol 0.1 implementation. (commit 78efa2ab914997904053d0d05b9358980f27167e)
+- pass: Verify pytest result count parsing. (commit dd0926cd2a560c404a7240908caed2054841d7e1)
+- pass: Final validation after C-4 pytest count fix. (commit 67f6c64e71b506dfb45e4b92132298d6d18cd030)
 
 ## Known Limitations
 - None recorded.

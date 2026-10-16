@@ -2,10 +2,10 @@
   "protocol_version": "0.1",
   "group_id": "G-01",
   "canonical_branch": "main",
-  "canonical_commit": "4528da8ccda85c0aecb47d6b8a38f203dfc17216",
+  "canonical_commit": "c446f6eae30d458fc49590da88d65d02dac2cb3c",
   "report_file": ".group/final/final_report.md",
   "initiated_by": "P31",
-  "created_at": "2026-10-16T08:28:44Z",
+  "created_at": "2026-10-16T08:51:36Z",
   "status": "completed",
   "known_limitations": []
 }

@@ -1,0 +1,22 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T085136Z-P31-a7e4",
+  "event_type": "final_result",
+  "group_id": "G-01",
+  "person_id": "P31",
+  "created_at": "2026-10-16T08:51:36Z",
+  "related_events": [],
+  "canonical_commit": "c446f6eae30d458fc49590da88d65d02dac2cb3c",
+  "final_report_path": ".group/final/final_report.md",
+  "test_evidence": [
+    "E-20261016T071057Z-P22-443f",
+    "E-20261016T071823Z-P22-4d88",
+    "E-20261016T080253Z-P22-7e3c",
+    "E-20261016T081148Z-P31-bb01",
+    "E-20261016T082708Z-P31-aaa1",
+    "E-20261016T084030Z-P31-7dc9",
+    "E-20261016T084909Z-P31-c3f4"
+  ],
+  "known_limitations": [],
+  "initiated_by": "P31"
+}
