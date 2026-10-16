@@ -1,0 +1,21 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T074947Z-P31-1b31",
+  "event_type": "change_published",
+  "group_id": "G-01",
+  "person_id": "P31",
+  "created_at": "2026-10-16T07:49:47Z",
+  "related_events": [],
+  "change_id": "C-3",
+  "branch": "people/P31/tests",
+  "commit": "0a95e70abf37342a603911b64aa90c7efa61699d",
+  "summary": "Add P31 member and basic demo test",
+  "files_changed": [
+    ".group/members/P31.json",
+    "tests/test_demo.py"
+  ],
+  "interface_changes": [],
+  "tests_run": [],
+  "known_issues": [],
+  "proposed_for_integration": true
+}
