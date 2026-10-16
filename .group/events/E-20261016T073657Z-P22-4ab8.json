@@ -1,0 +1,25 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T073657Z-P22-4ab8",
+  "event_type": "integration_result",
+  "group_id": "G-01",
+  "person_id": "P22",
+  "created_at": "2026-10-16T07:36:57Z",
+  "related_events": [
+    "E-20261016T072714Z-P17-4438"
+  ],
+  "change_id": "C-2",
+  "target_branch": "people/P22/conflict-demo",
+  "result": "success",
+  "merge_commit": "17ccdb660f64178336dc7ffd2921d227a02f59a0",
+  "conflicts": [
+    "conflict_demo.txt"
+  ],
+  "conflict_resolution_summary": "Resolved add/add conflict by preserving both P17 and P22 versions.",
+  "verification": {
+    "build": "not_run",
+    "tests": "pass",
+    "semantic_review": "pass"
+  },
+  "summary": "C-2 conflict resolved successfully; pytest passed and both intended contents were preserved."
+}
