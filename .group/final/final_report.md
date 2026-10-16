@@ -7,16 +7,18 @@ See `.group/assignment/assignment.md`.
 The group submits the accepted canonical repository state described below.
 
 ## Canonical Commit
-2d55a61f005bcda3723f399033e19270d3f3e3d8
+751b04f047f141f1700fbe5cfd44c0879d930538
 
 ## Important Changes
 - C-1: Add demo2 collaboration file
+- C-2: Add P17 version of conflict demo
+- C-3: Add P31 member and basic demo test
 
 ## Validation
-- pass: Run pytest on integrated C-1.
-- pass: Final pytest on canonical main before finalization.
-- pass: Final validation of canonical main after C-2 and C-3.
-- pass: Final validation of canonical main after C-2 and C-3.
+- pass: Run pytest on integrated C-1. (commit caf0ba9dd77e1ef0a8a6bb712973d748a2cd6459)
+- pass: Final pytest on canonical main before finalization. (commit e689dfb24498507958ce2da3a45e4becd65f5a13)
+- pass: Final validation of canonical main after C-2 and C-3. (commit 5e24c4a32032418ed2100faddf6ec3cb0baad0bb)
+- pass: Final validation of canonical main after C-2 and C-3. (commit 5a4d3b9c362bbfba2b1bed3e63e696aa954fffe8)
 
 ## Known Limitations
 - None recorded.
