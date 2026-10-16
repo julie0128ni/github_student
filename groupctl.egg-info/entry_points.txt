@@ -1,0 +1,2 @@
+[console_scripts]
+groupctl = groupctl.cli:main

@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+groupctl/__init__.py
+groupctl/__main__.py
+groupctl/cli.py
+groupctl/config.py
+groupctl/events.py
+groupctl/finalization.py
+groupctl/git_ops.py
+groupctl/status.py
+groupctl.egg-info/PKG-INFO
+groupctl.egg-info/SOURCES.txt
+groupctl.egg-info/dependency_links.txt
+groupctl.egg-info/entry_points.txt
+groupctl.egg-info/top_level.txt
+tests/test_events.py

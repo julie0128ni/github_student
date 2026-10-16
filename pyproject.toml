@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "groupctl"
+version = "0.1.0"
+description = "Deterministic collaboration helper for the Group Collaboration Software Assignment"
+requires-python = ">=3.10"
+
+[project.scripts]
+groupctl = "groupctl.cli:main"
+
+[tool.setuptools]
+packages = ["groupctl"]
