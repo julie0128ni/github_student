@@ -1,0 +1,20 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T072714Z-P17-4438",
+  "event_type": "change_published",
+  "group_id": "G-01",
+  "person_id": "P17",
+  "created_at": "2026-10-16T07:27:14Z",
+  "related_events": [],
+  "change_id": "C-2",
+  "branch": "people/P17/demo",
+  "commit": "c31efad38cc196009c6e7d33d335b92dff0b54e5",
+  "summary": "Add P17 version of conflict demo",
+  "files_changed": [
+    "conflict_demo.txt"
+  ],
+  "interface_changes": [],
+  "tests_run": [],
+  "known_issues": [],
+  "proposed_for_integration": true
+}
