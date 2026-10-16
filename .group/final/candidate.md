@@ -5,7 +5,7 @@ See `.group/assignment/assignment.md`.
 
 ## Proposed Result
 Canonical branch: `main`
-Canonical commit: `8097fa51224420f900c788165d7c068e6de267f7`
+Canonical commit: `ac9256ef8b55debf0b11ea2c8add5eaa16c60d31`
 
 ## Pending Published Changes
 - None detected from published change events.
