@@ -1,6 +1,6 @@
 {
   "protocol_version": "0.1",
-  "group_id": "G-XX",
+  "group_id": "G-01",
   "canonical_branch": "main",
   "assignment_file": ".group/assignment/assignment.md"
 }
