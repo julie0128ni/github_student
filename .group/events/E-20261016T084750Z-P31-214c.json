@@ -1,0 +1,23 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T084750Z-P31-214c",
+  "event_type": "integration_result",
+  "group_id": "G-01",
+  "person_id": "P31",
+  "created_at": "2026-10-16T08:47:50Z",
+  "related_events": [
+    "E-20261016T084358Z-P31-0037"
+  ],
+  "change_id": "C-4",
+  "target_branch": "people/P31/test-count-fix",
+  "result": "success",
+  "merge_commit": "13472a23d3ab5d9bc354ff8a214b41f884e0f71b",
+  "conflicts": [],
+  "conflict_resolution_summary": "",
+  "verification": {
+    "build": "not_run",
+    "tests": "pass",
+    "semantic_review": "pass"
+  },
+  "summary": "C-4 fixes pytest result count parsing; pytest passed and semantic compatibility was verified."
+}
