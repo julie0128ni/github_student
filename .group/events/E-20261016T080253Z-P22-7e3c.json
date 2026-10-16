@@ -1,0 +1,20 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T080253Z-P22-7e3c",
+  "event_type": "test_result",
+  "group_id": "G-01",
+  "person_id": "P22",
+  "created_at": "2026-10-16T08:02:53Z",
+  "related_events": [],
+  "scope": "main",
+  "commit": "5e24c4a32032418ed2100faddf6ec3cb0baad0bb",
+  "commands": [
+    "pytest"
+  ],
+  "automated_result": "pass",
+  "passed": 1,
+  "failed": 0,
+  "skipped": 0,
+  "human_checks_required": [],
+  "summary": "Final validation of canonical main after C-2 and C-3."
+}
