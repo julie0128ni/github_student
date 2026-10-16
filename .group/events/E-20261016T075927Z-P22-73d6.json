@@ -1,0 +1,23 @@
+{
+  "protocol_version": "0.1",
+  "event_id": "E-20261016T075927Z-P22-73d6",
+  "event_type": "integration_result",
+  "group_id": "G-01",
+  "person_id": "P22",
+  "created_at": "2026-10-16T07:59:27Z",
+  "related_events": [
+    "E-20261016T074947Z-P31-1b31"
+  ],
+  "change_id": "C-3",
+  "target_branch": "people/P22/integrate-c3",
+  "result": "success",
+  "merge_commit": "309900a5265d70dc4785fcf90ab5ac1ef73c4923",
+  "conflicts": [],
+  "conflict_resolution_summary": "",
+  "verification": {
+    "build": "not_run",
+    "tests": "pass",
+    "semantic_review": "pass"
+  },
+  "summary": "C-3 integrated successfully; P31 test contribution passed and no semantic incompatibility was found."
+}
